@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.constrained-section {
+    width: 100%;          /* Fixed width */
+    height: 100vh;
+    background: linear-gradient(to bottom, #040e19, #091e44); /* Your gradient */
+    position: relative;
+    display: flex;
+}
+
+.container {
+    width: 100%;          /* Fixed width */
+    height: 200vh;
+    background: linear-gradient(to bottom, #091e44, #091e44); /* Your gradient */
+}
+
+.top-right-image {
+    position: absolute;    /* Already set inline, but included for clarity */
+    top: 0px;           /* 20px from the top of the page */
+    right: 0px;         /* 20px from the right of the page */
+    width: 40%;        /* Adjust size as needed */
+    height: auto;        /* Maintain aspect ratio */
+    z-index: 10;         /* Ensure image is above other content */
+}
+
+.title-body {
+    background-color: white;
+    width: 50%;
+    height: 15vh;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    z-index: 20;         /* Ensure image is above other content */
+}
