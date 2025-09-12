@@ -5,27 +5,104 @@
 }
 
 
-.constrained-section {
-    width: 100%;          /* Fixed width */
-    height: 100vh;
-    background: linear-gradient(to bottom, #040e19, #091e44); /* Your gradient */
-    position: relative;
+body {
     display: flex;
+    width: 100%;
+    height: 300vh;
+    flex-direction: column;
+
+    
 }
 
+
+
 .container {
-    width: 100%;          /* Fixed width */
-    height: 200vh;
-    background: linear-gradient(to bottom, #091e44, #091e44); /* Your gradient */
+    width: 100%;          
+    height: 100vh;
+    background: linear-gradient(to bottom, #040e19, #091e44); 
+    position: relative;
+    display: flex;
+    /* border: 8px solid black;border: 8px solid black; */
+}
+
+.container-1 {
+    width: 100%;          
+    height: 100vh;
+    background: linear-gradient(to bottom, #091e44, #091e44); 
+    position: relative;
+    display: flex;
+    /* border: 8px solid black;border: 8px solid black; */
+}
+
+
+.title-body {
+    width: 55%;
+    height: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* border: 8px solid rgb(26, 193, 185);       */
 }
 
 .top-right-image {
-    position: absolute;    /* Already set inline, but included for clarity */
-    top: 0px;           /* 20px from the top of the page */
-    right: 0px;         /* 20px from the right of the page */
-    width: 40%;        /* Adjust size as needed */
-    height: auto;        /* Maintain aspect ratio */
-    z-index: 10;         /* Ensure image is above other content */
+    width: 40%;
+    height: 50vh;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 8px solid rgb(255, 0, 0);     */
+}
+
+.title-text {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    /* border: 8px solid black;       */
+}
+
+.title-quote {
+    top: 40%;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    z-index: 19;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    /* border: 8px solid black;   */
+}
+
+
+/* .container {
+    width: 100%;         
+    height: 200vh;
+    background: linear-gradient(to bottom, #091e44, #091e44); 
+}
+
+.top-right-image {
+    position: absolute;    
+    top: 0px;          
+    right: 0px;        
+    width: 30%;
+    height: 100vh;
+    z-index: 10;       
 }
 
 .title-body {
@@ -35,5 +112,5 @@
     position: absolute;
     top: 10px;
     left: 100px;
-    z-index: 20;         /* Ensure image is above other content */
-}
+    z-index: 20;        
+}  */
