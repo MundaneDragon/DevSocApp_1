@@ -7,10 +7,17 @@
     <title>DevSoc - Dream Theme</title>
 </head>
 <body>
-    <nav class="container-1" style="height: 20vh; background: linear-gradient(to bottom, #010810, #040e19);">
-
+    <nav class="container-1" style="height: 20vh; background: linear-gradient(to bottom, #010810, #040e19); justify-content: end;">
+        <div class="nav-content" style="justify-content: end; padding-right: 50px;">
+            <ul class="nav-links">
+            <li><a href="#home" style="">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#funfacts">Fun Facts</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="container">
+    <div class="container" id="home">
         <div class="title-body">
             <div class="title-text">
                 <h1 style="color: white; font-size: clamp(8px, 5vh, 4vh);">Welcome to My</h1>
@@ -37,7 +44,7 @@
             <img src="./assets/clouds.png" alt="clouds" style="width: 100%;height: auto;top: 0%;overflow: auto;transform: scaleX(-1);">
         </div> -->
     </div> 
-    <div class="container-1">
+    <div class="container-1" id="about">
         <div class="title-body" style="height: 55%;">
             <div class="title-text" style="height: 20%;">
                 <h1 style="color: white; font-size: clamp(16px, 10vh, 8vh); ">About Me</h1>
@@ -63,8 +70,39 @@
     </div> 
 
     </div>  
-    <div class="container-1" >
-
+    <!-- Projects -->
+    <div class="container-1" id="projects" style="flex-direction: row; overflow: hidden;padding-top: 30px;">
+        <div >
+            <img src="./assets/backgroundclouds.png" alt="background clouds" style="width: 100%; height: 100%;">
+            <img src="./assets/backgroundclouds.png" alt="background clouds" style="width: 100%; height: 100%; overflow: hidden;">
+        </div>
+        <div class="title-body" style="height: 55%;padding-top: 30px;">
+            <div class="title-text" style="height: 20%;">
+                <h1 style="color: rgb(255, 149, 0); font-size: clamp(16px, 10vh, 8vh); ">Project Plans</h1>
+                
+            </div>
+        </div>
+    </div>  
+    <!-- Fun Facts-->
+    <div class="container-1" id="funfacts" style="background: linear-gradient(to bottom, #041907, #094412); height: 60vh;overflow: hidden;" >
+        <div class="title-body" style="height: 80%;">
+            <div class="title-text" style="height: 20%;">
+                <h1 style="color: white; font-size: clamp(16px, 10vh, 8vh); ">FUN FACTS</h1>
+                
+            </div>
+            <div class="title-quote" style="color: white; font-size: clamp(6px, 4vh, 3vh); width: 95%; padding-left: 5%;top:25%;height: 100%;align-items: center;">
+                <h3> I lived most of my life in Qatar </h3>
+                <h3 style="padding-top: 20px;"> I am big fan of cats, but dogs are cool too</h3>
+                <h3 style="padding-top: 20px;"> Favourite sport got to be Badminton</h3>
+                <h3 style="padding-top: 20px;"> Currently looking for internships 😅</h3>
+            </div>
+        </div>
+        <div class="top-right-image" style="height: 100%;"> 
+            <img src="./assets/shrekv2.png" alt="shrek house and toilet" style="width: 100%; height: auto;justify-content: end;align-items: end;position: absolute;bottom: -15%;">
+        </div>
+        <div class="top-right-image" style="height:50%;left: 0%;width: 60%;z-index: 1;"> 
+            <img src="./assets/grass.png" alt="grass" style="width: 100%; height: auto;;position: absolute;bottom: -140%;">
+        </div>
     </div>  
 
 </body>
